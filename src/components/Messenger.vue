@@ -51,15 +51,14 @@ export default {
 </script>
 
 <style scoped>
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.5s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s ease;
 }
-.fade-enter, .fade-leave-to {
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem; /* Отступ между сообщениями */
+  transform: translateX(30px);
 }
 
 .clear-both::after {
